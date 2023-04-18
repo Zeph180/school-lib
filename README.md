@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <h3><b>MORSE CODE DECODER </b></h3>
+  <h3><b>SCHOOL LIBRARY </b></h3>
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -32,7 +32,7 @@
 
 # 📖 Book store <a name="about-project"></a>
 
-**Book store** Morse code decoder is a simple project built with ruby. It takes a string of morse code and converts it to english.
+**School Library** Is a simple application build with ruby to manage students and teachers using library resources
  <br>
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -50,7 +50,7 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Convert morse code** - This project takes a string of morse code and converts it to english.
+- **School Library**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -132,18 +132,13 @@ Example command:
 - Twitter: [richards_zeph](https://twitter.com/richards_zeph)
 - LinkedIn: [Kigozi Joseph Suubi](https://linkedin.com/in/kigozi-joseph-suubi)
 
-👤 **Author2**
-
-- GitHub: [Crispin](https://github.com/Bigizi)
-- LinkedIn: [Bigizi Nduwayo Crispin](https://www.linkedin.com/in/bigizi/)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[View category]**
+- [ ] **[Manage Books]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -161,7 +156,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project buy me a cup of coffee
+If you like this, give it a star and follow me on all socials so that we can connect..
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
