@@ -14,6 +14,7 @@ class Person < Nameable
     @name = name
     @age = age
     @parent_permission = parent_permission
+    @rentals = []
   end
 
   def can_use_services?
@@ -28,6 +29,14 @@ class Person < Nameable
 
   def of_age?
     @age >= 18
+  end
+
+  def add_rental(rental)
+    @rentals << rental
+  end
+
+  def remove_rental(rental)
+    @rentals.delete(rental)
   end
 end
 
