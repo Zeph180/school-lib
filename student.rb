@@ -1,9 +1,9 @@
-class Student < Person
-  attr_accessor :classroom
+require_relative './person'
 
-  def initialize(age, classroom, name, parent_permission: true)
-    super(age, name, parent_permission: parent_permission)
-    @classroom = classroom
+class Student < Person
+  def initialize(id, age, name, parent_permission)
+    super(id, age, name: name, parent_permission: parent_permission)
+    @rentals = []
   end
 
   def play_hooky

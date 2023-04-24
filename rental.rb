@@ -1,10 +1,13 @@
 class Rental
-  attr_accessor :date, :person, :book
+  attr_reader :book, :person
+  attr_accessor :date
 
-  def initialize(date, person, book)
+  def initialize(person, book, date)
+    raise ArgumentError, 'Invalid book object' unless book.is_a?(Book)
+
     @date = date
-    @person = person
     @book = book
+    @person = person
     book.rentals << self
     person.rentals << self
   end
