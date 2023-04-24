@@ -1,5 +1,5 @@
-require './app'
-require_relative './mainMenu'
+require_relative './app'
+require_relative './main_menu'
 # Main class to start the library app
 class Main
   def initialize
