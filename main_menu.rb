@@ -1,45 +1,40 @@
-# Class responsible for handling user input and displaying menu options
-class MainMenu
-  OPTIONS = {
-    '1' => :list_all_books,
-    '2' => :list_all_people,
-    '3' => :create_person,
-    '4' => :create_book,
-    '5' => :create_rental,
-    '6' => :list_rentals,
-    '7' => :exit
-  }.freeze
+require_relative 'handler'
 
-  def initialize(app)
-    @app = app
+def display_menu
+  puts 'Welcome to School Library App!'
+  puts
+  puts 'Please choose an option by entering the number:'
+  puts '  1. List all books'
+  puts '  2. List all people'
+  puts '  3. Create a person'
+  puts '  4. Create a book'
+  puts '  5. Create a rental'
+  puts '  6. List all rentals for a given person id'
+  puts '  7. Quit'
+end
+
+def handle_choice(choice, books, people, rentals)
+  case choice
+  when '1' then handle_list_books(books)
+  when '2' then handle_list_people(people)
+  when '3' then handle_create_person(people)
+  when '4' then handle_create_book(books)
+  when '5' then handle_create_rental(people, books, rentals)
+  when '6', '7' then handle_choice_menu(choice, books, people, rentals)
+  else handle_invalid_choice
   end
 
-  # rubocop:disable Metrics/MethodLength
-  def display_menu
-    puts 'Welcome to School Library App!'
-    loop do
-      puts 'Please choose an option by entering a number:'
-      puts '1 - List all books'
-      puts '2 - List all people'
-      puts '3 - Create a person'
-      puts '4 - Create a book'
-      puts '5 - Create a rental'
-      puts '6 - List all rentals for a given person id'
-      puts '7 - Exit'
-      option = gets.chomp
+  choice == '7'
+end
 
-      if OPTIONS.key?(option)
-        selected_option = OPTIONS[option]
-        if selected_option == :exit
-          puts 'Thank you for using our library ¯\^-^/¯'
-          return
-        else
-          @app.send(selected_option)
-        end
-      else
-        puts 'Please enter a number between 1 and 7'
-      end
-    end
+def handle_choice_menu(choice, _books, people, rentals)
+  case choice
+  when '6' then handle_list_rentals(people, rentals)
+  when '7'
+    handle_quit
+    true
+  else
+    handle_invalid_choice
+    false
   end
-  # rubocop:enable Metrics/MethodLength
 end

@@ -1,15 +1,17 @@
-require_relative './app'
-require_relative './main_menu'
-# Main class to start the library app
-class Main
-  def initialize
-    @app = App.new
-    @main_menu = MainMenu.new(@app)
-  end
+require_relative 'app'
+require_relative 'main_menu'
+require_relative 'book'
+require_relative 'person'
+require_relative 'rental'
+require_relative 'handler'
 
-  def start
-    @main_menu.display_menu
-  end
+books = []
+people = []
+rentals = []
+
+loop do
+  display_menu
+  choice = gets.chomp
+  handle_choice(choice, books, people, rentals)
+  break if choice == '7'
 end
-main = Main.new
-main.start

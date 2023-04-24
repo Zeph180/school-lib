@@ -1,13 +1,18 @@
 class Book
-  attr_accessor :title, :author, :rentals
+  attr_reader :id, :title, :author, :rentals
+
+  @id_count = 0
 
   def initialize(title, author)
+    @id = self.class.generate_id
     @title = title
     @author = author
     @rentals = []
   end
 
-  def add_rental(date, person)
-    Rental.new(date, self, person)
+  def self.generate_id
+    @id_count += 1
   end
+
+  # ...
 end
