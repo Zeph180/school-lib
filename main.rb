@@ -6,6 +6,7 @@ class Main
     @app = App.new
     @main_menu = MainMenu.new(@app)
   end
+
   def start
     @main_menu.display_menu
   end
