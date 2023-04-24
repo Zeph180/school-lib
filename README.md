@@ -12,7 +12,6 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -131,6 +130,12 @@ Example command:
 - GitHub: [zeph180](https://github.com/zeph180)
 - Twitter: [richards_zeph](https://twitter.com/richards_zeph)
 - LinkedIn: [Kigozi Joseph Suubi](https://linkedin.com/in/kigozi-joseph-suubi)
+
+👤 **Mladan Ilic**
+
+- GitHub: [@Ilic](https://github.com/djo1975)
+- Twitter: [@Ilic](https://twitter.com/MladanIlic)
+- LinkedIn: [@Ilic] (https://www.linkedin.com/in/mladanilic/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
