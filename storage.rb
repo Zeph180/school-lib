@@ -11,6 +11,7 @@ module Storage
       []
     end
   end
+
   def self.write_json(file_path, data)
     File.write(file_path, JSON.pretty_generate(data))
   end
