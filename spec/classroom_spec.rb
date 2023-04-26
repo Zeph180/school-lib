@@ -1,17 +1,19 @@
-require 'rspec'
 require_relative '../classroom'
 require_relative '../student'
 
 describe Classroom do
   let(:classroom) { Classroom.new('History') }
+  let(:student) { Student.new(1, 17, 'John Doe', true) }
 
-  describe '#initialize' do
-    it 'creates a classroom with a label' do
-      expect(classroom.label).to eq('History')
+  describe '#add_student' do
+    it 'adds a student to the classroom' do
+      classroom.add_student(student)
+      expect(classroom.students).to include(student)
     end
 
-    it 'initializes an empty list of students' do
-      expect(classroom.students).to be_empty
+    it 'sets the classroom property of the student' do
+      classroom.add_student(student)
+      expect(student.classroom).to eq(classroom)
     end
   end
 end
