@@ -45,12 +45,12 @@ RSpec.describe Person do
       rental = instance_double('Rental', to_h: { book_id: 1, person_id: 1, date: '2023-04-25' })
       person.instance_variable_set(:@rentals, [rental])
       expect(person.to_h).to eq({
-        id: 1,
-        name: 'Test Name',
-        age: 18,
-        parent_permission: true,
-        rentals: [rental.to_h]
-      })
+                                  id: 1,
+                                  name: 'Test Name',
+                                  age: 18,
+                                  parent_permission: true,
+                                  rentals: [rental.to_h]
+                                })
     end
   end
 end
