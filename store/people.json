@@ -14,6 +14,11 @@
         "book_id": 1,
         "person_id": 1,
         "date": "2020-05-05"
+      },
+      {
+        "book_id": 4,
+        "person_id": 1,
+        "date": "2022-10-10"
       }
     ]
   },
@@ -41,7 +46,18 @@
     "name": "Kigozi Jusuf",
     "parent_permission": false,
     "rentals": [
-
+      {
+        "book_id": 5,
+        "person_id": 3,
+        "date": "2020-02-05"
+      }
     ]
+  },
+  {
+    "id": 4,
+    "age": 33,
+    "name": "Klok",
+    "parent_permission": true,
+    "specialization": "Poiu"
   }
 ]

@@ -45,6 +45,30 @@
     "title": "Kirino",
     "author": "Medved Maljkovic",
     "rentals": [
+      {
+        "book_id": 4,
+        "person_id": 1,
+        "date": "2022-10-10"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Kako Moze",
+    "author": "Lako Ako",
+    "rentals": [
+      {
+        "book_id": 5,
+        "person_id": 3,
+        "date": "2020-02-05"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Kako Bre",
+    "author": "Tako Lako",
+    "rentals": [
 
     ]
   }

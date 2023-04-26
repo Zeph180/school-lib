@@ -18,5 +18,15 @@
     "book_id": 2,
     "person_id": 2,
     "date": "2021-12-01"
+  },
+  {
+    "book_id": 5,
+    "person_id": 3,
+    "date": "2020-02-05"
+  },
+  {
+    "book_id": 4,
+    "person_id": 1,
+    "date": "2022-10-10"
   }
 ]
